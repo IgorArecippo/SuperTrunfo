@@ -45,6 +45,8 @@ class Form extends React.Component {
             type="number"
             value={ cardAttr1 }
             onChange={ onInputChange }
+            max="90"
+            min="0"
           />
         </label>
         <label htmlFor="atrr2">
@@ -55,6 +57,8 @@ class Form extends React.Component {
             type="number"
             value={ cardAttr2 }
             onChange={ onInputChange }
+            max="90"
+            min="0"
           />
         </label>
         <label htmlFor="atrr3">
@@ -65,6 +69,8 @@ class Form extends React.Component {
             type="number"
             value={ cardAttr3 }
             onChange={ onInputChange }
+            max="90"
+            min="0"
           />
         </label>
         <label htmlFor="img">
@@ -104,7 +110,7 @@ class Form extends React.Component {
         <button
           data-testid="save-button"
           name="save-button"
-          type="button"
+          type="submit"
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }
         >
